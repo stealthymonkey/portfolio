@@ -15,22 +15,31 @@
       background-color: #000;
       color: #fff;
     }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
     .content {
         display: flex;
+        flex-wrap: wrap;
         align-items: flex-start;
         gap: 12px;
+        padding: 20px;
     }
     .bio {
         flex: 1;
+        min-width: 250px;
         text-align: left;
     }
     h1, h2 {
       color: #fff;
       margin: 0;
       margin-bottom: 0.5em;
+      text-align: left;
     }
     p {
         margin: 0 0 0.75em 0;
+        text-align: left;
     }
     ul {
         text-align: left;
@@ -55,6 +64,23 @@
       margin-top: 50px;
       font-size: 0.9em;
       color: #aaa;
+      text-align: left;
+      padding: 0 20px;
+    }
+    @media (max-width: 600px) {
+      .content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .photo img {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      li {
+        white-space: normal;
+      }
     }
   </style>
 </head>
