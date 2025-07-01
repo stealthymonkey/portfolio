@@ -15,6 +15,11 @@
       background-color: #000;
       color: #fff;
     }
+    .content {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
     h1, h2 {
       color: #fff;
       margin: 0;
@@ -30,6 +35,10 @@
     a:hover {
       text-decoration: underline;
     }
+    .photo img {
+        max-width: 100%;
+        height: auto;
+    }
     footer {
       margin-top: 50px;
       font-size: 0.9em;
@@ -38,15 +47,21 @@
   </style>
 </head>
 <body>
-  <h1>StealthyMonkey</h1>
-  <p>Hi! I'm StealthyMonkey, welcome to my website.</p>
-  <ul>
-    <li>I am a PM working on Search and LLMs.</li>
-    <li>I have my undergrad in Business Management & Supply Chain Operations.</li>
-    <li>I am pursuing my masters in Data Science</li>
-    <li>I like space, financial markets, technology.</li>
-  </ul>
-  
+    <div class="content">
+        <div class="bio">
+            <h1>StealthyMonkey</h1>
+            <p>Hi! I'm StealthyMonkey, welcome to my website.</p>
+            <ul>
+                <li>I am a PM working on Search and LLMs.</li>
+                <li>I have my undergrad in Business Management & Supply Chain Operations.</li>
+                <li>I am pursuing my masters in Data Science.</li>
+                <li>I like space, financial markets, technology.</li>
+            </ul>
+        </div>
+        <div class="photo">
+            <img src="https://cdn.costumewall.com/wp-content/uploads/2015/09/dexters-laboratory-costume.jpg" />
+        </div>
+    </div>
   <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
     &copy; <span id="year"></span> StealthyMonkey. All rights reserved.
   </footer>
