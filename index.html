@@ -21,7 +21,7 @@
     }
     .content {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: flex-start;
         gap: 12px;
         padding: 20px;
@@ -49,8 +49,9 @@
           white-space: nowrap;
       }
       .nav {
-        margin-bottom: 20px;
-        text-align: left;
+        margin: 20px 0;
+        text-align: center;
+        width: 100%;
       }
       .nav a {
         margin-right: 15px;
@@ -86,12 +87,6 @@
   </style>
 </head>
 <body>
-        <nav class="nav">
-              <a href="index.html">Home</a>
-              <a href="blog.html">Blog</a>
-              <a href="portfolio.html">Portfolio</a>
-              <a href="books.html">Books</a>
-            </nav>  
         <div class="content">
           <div class="bio">
             <p>Hi! I'm StealthyMonkey, welcome to my website.</p>
@@ -101,11 +96,17 @@
                 <li>I am pursuing my masters in Data Science.</li>
                 <li>I like space, financial markets, technology.</li>
             </ul>
-        </div>
-        <div class="photo">
+          </div>
+          <nav class="nav">
+              <a href="index.html">Home</a>
+              <a href="blog.html">Blog</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="books.html">Books</a>
+          </nav>
+          <div class="photo">
             <img src="https://cdn.costumewall.com/wp-content/uploads/2015/09/dexters-laboratory-costume.jpg" />
+          </div>
         </div>
-    </div>
   <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
     &copy; <span id="year"></span> StealthyMonkey. All rights reserved.
   </footer>

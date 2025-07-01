@@ -21,7 +21,7 @@
     }
     .content {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: flex-start;
         gap: 12px;
         padding: 20px;
@@ -49,8 +49,9 @@
           white-space: nowrap;
       }
       .nav {
-        margin-top: 20px;
-        text-align: left;
+        margin: 20px 0;
+        text-align: center;
+        width: 100%;
       }
       .nav a {
         margin-right: 15px;
@@ -62,15 +63,6 @@
     a:hover {
       text-decoration: underline;
     }
-    .photo {
-        flex: 0 1 300px;
-    }
-    .photo img {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-        display: block;
-    }
     footer {
       margin-top: 50px;
       font-size: 0.9em;
@@ -79,9 +71,6 @@
       padding: 0 20px;
     }
     @media (max-width: 600px) {
-      .photo {
-        flex-basis: 150px;
-      }
     }
   </style>
 </head>
@@ -96,9 +85,6 @@
               <a href="portfolio.html">Portfolio</a>
               <a href="books.html">Books</a>
             </nav>
-        </div>
-        <div class="photo">
-            <img src="https://cdn.costumewall.com/wp-content/uploads/2015/09/dexters-laboratory-costume.jpg" />
         </div>
     </div>
   <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
