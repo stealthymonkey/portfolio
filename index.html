@@ -1,104 +1,29 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>StealthyMonkey's Blog</title>
-  <style>
-      body {
-        font-family: sans-serif;
-        max-width: 900px;
-        margin: 40px 0;
-        line-height: 1.0;
-        padding: 0;
-        background-color: #000;
-        color: #fff;
-      }
-    .container {
-        width: 100%;
-        padding: 0;
-    }
-    .content {
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        gap: 12px;
-        padding: 20px;
-    }
-    .bio {
-        flex: 1 1 auto;
-        text-align: left;
-    }
-    h1, h2 {
-      color: #fff;
-      margin: 0;
-      margin-bottom: 0.5em;
-      text-align: left;
-    }
-    p {
-        margin: 0 0 0.75em 0;
-        text-align: left;
-    }
-    ul {
-        text-align: left;
-        padding-left: 20px;
-    }
-    li {
-        margin-bottom: 0.5em;
-        white-space: nowrap;
-    }
-    a {
-      color: #4ea8ff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .photo {
-        flex: 0 1 300px;
-    }
-    .photo img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        display: block;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #aaa;
-      text-align: left;
-      padding: 0 20px;
-    }
-    @media (max-width: 600px) {
-      .photo {
-        flex-basis: 150px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="content">
-        <div class="bio">
-            <p>Hi! I'm StealthyMonkey, welcome to my website.</p>
-            <ul>
-                <li>I am a PM working on Search and LLMs.</li>
-                <li>I have my undergrad in Business Management & Supply Chain Operations.</li>
-                <li>I am pursuing my masters in Data Science.</li>
-                <li>I like space, financial markets, technology.</li>
-            </ul>
-        </div>
-        <div class="photo">
-            <img src="https://cdn.costumewall.com/wp-content/uploads/2015/09/dexters-laboratory-costume.jpg" />
-        </div>
+  <main class="content">
+    <div class="bio">
+      <p>Hi! I'm StealthyMonkey, welcome to my website.</p>
+      <ul>
+        <li>I am a PM working on Search and LLMs.</li>
+        <li>I have my undergrad in Business Management &amp; Supply Chain Operations.</li>
+        <li>I am pursuing my masters in Data Science.</li>
+        <li>I like space, financial markets, technology.</li>
+      </ul>
     </div>
-  <footer style="margin-top: 50px; font-size: 0.9em; color: gray;">
+    <div class="photo">
+      <img src="https://cdn.costumewall.com/wp-content/uploads/2015/09/dexters-laboratory-costume.jpg" alt="Dexter's Laboratory Costume" />
+    </div>
+  </main>
+  <footer>
     &copy; <span id="year"></span> StealthyMonkey. All rights reserved.
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script defer src="script.js"></script>
 </body>
 </html>
