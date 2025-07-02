@@ -9,7 +9,7 @@
       body {
         font-family: sans-serif;
         max-width: 900px;
-        margin: 40px 0;
+        margin: 0;
         line-height: 1.0;
         padding: 60px 0 0 0;
         background-color: #000;
@@ -24,10 +24,10 @@
         flex-wrap: wrap;
         align-items: flex-start;
         gap: 12px;
-        padding: 20px;
+        padding: 10px 20px 0 20px;
     }
     .bio {
-        flex: 1 1 auto;
+        flex: 1 1 0;
         text-align: left;
     }
     h1, h2 {
@@ -69,7 +69,8 @@
       text-decoration: underline;
     }
     .photo {
-        flex: 0 1 300px;
+        flex: 0 0 auto;
+        align-self: flex-start;
     }
     .photo img {
         width: 100%;
@@ -84,9 +85,21 @@
       text-align: left;
       padding: 0 20px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
+      .content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
       .photo {
-        flex-basis: 150px;
+        width: 100%;
+        margin-top: 20px;
+      }
+      .photo img {
+        max-width: 300px;
+        width: 100%;
+      }
+      li {
+        white-space: normal;
       }
     }
   </style>
@@ -98,7 +111,7 @@
             <p>Hi, welcome to my website. Some things about me:</p>
             <ul>
                 <li>I am a PM working on Search and LLMs.</li>
-                <li>I have my undergrad in Business Management, Supply Chain Operations, Economics</li>
+                <li>I have my undergrad in Business Management, Supply Chain Operations, Economics.</li>
                 <li>I am pursuing my masters in Data Science.</li>
                 <li>I like space, financial markets, technology.</li>
             </ul>
